@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.springframework: INFO
+    com.mimoprint: DEBUG
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbvolleyball
+    username: root
+    password: root
+  rabbitmq:    
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123
+    publisher-confirms: true
+    virtual-host: /test
